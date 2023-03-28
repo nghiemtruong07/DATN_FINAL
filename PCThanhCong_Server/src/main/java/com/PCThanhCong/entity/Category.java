@@ -29,6 +29,7 @@ public class Category implements Serializable {
     @JsonManagedReference
     private List<Product> products;
 
+
     @PrePersist
     public void PrePersist(){
         if(this.status == null)

@@ -33,6 +33,7 @@ public class CartItem implements Serializable {
     @JoinColumn(name = "product_Id")
     private Product product;
 
+
     public CartItem(Integer amount, Cart cart, Product product) {
         this.amount = amount;
         this.cart = cart;

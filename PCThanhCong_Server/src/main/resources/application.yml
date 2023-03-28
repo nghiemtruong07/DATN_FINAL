@@ -2,7 +2,7 @@ springdoc:
   swagger-ui:
     path: /api/swagger-ui
 
-pathTemp: D:\Code\SmartPhoneShop\SmartphoneShopServer\Temp\
+pathTemp: D:\Document_Study\MySchool\Nam4\Ky II\DATN_FINAL\PCThanhCong_Server\Temp\
 
 mail:
   username : ${MAIL_USERNAME}

@@ -24,6 +24,7 @@ public class RegistrationUserToken implements Serializable {
     @JoinColumn(nullable = false, name = "userId")
     private User user;
 
+
     public RegistrationUserToken(User user, String token) {
         this.user = user;
         this.token = token;

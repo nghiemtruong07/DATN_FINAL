@@ -15,7 +15,6 @@ import java.util.Date;
 @AllArgsConstructor
 @Table(name = "ProductImages")
 public class ProductImage implements Serializable {
-
     @Column(name = "id")
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

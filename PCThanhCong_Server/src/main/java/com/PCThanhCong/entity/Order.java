@@ -49,6 +49,7 @@ public class Order implements Serializable {
         return amount;
     }
 
+
     public void setAmount(Integer amount) {
         this.amount = amount;
     }

@@ -157,7 +157,6 @@ public class Product implements Serializable {
     public void setCategory(Category category) {
         this.category = category;
     }
-
     public List<ProductImage> getProductImages() {
         return productImages;
     }
