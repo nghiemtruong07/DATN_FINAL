@@ -20,6 +20,8 @@ public class CreateProductForm {
     private String title;
 
     @NotBlank
+    private String specifications;
+    @NotBlank
     private String descriptions;
 
     @Min(value = 0 , message = "Giá gốc phải hơn  0")
@@ -38,6 +40,7 @@ public class CreateProductForm {
 
         Product p = new Product(
                 title,
+                specifications,
                 descriptions,
                 originalPrice,
                 promotionPrice,

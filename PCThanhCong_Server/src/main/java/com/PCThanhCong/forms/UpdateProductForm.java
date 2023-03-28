@@ -19,6 +19,9 @@ public class UpdateProductForm {
     private String title;
 
     @NotBlank
+    private String specifications;
+
+    @NotBlank
     private String descriptions;
 
     @Min(value = 0 , message = "Giá gốc phải hơn  0")
@@ -35,6 +38,7 @@ public class UpdateProductForm {
     public Product toEntity(){
         Product p = new Product(
                 title,
+                specifications,
                 descriptions,
                 originalPrice,
                 promotionPrice,

@@ -23,6 +23,9 @@ public class Product implements Serializable {
     @Column(name = "`title`",length = 255,nullable = false)
     private String title;
 
+    @Column(name = "specifications",length = 2000, nullable = false)
+    private String specifications;
+
     @Column(name = "`descriptions`",length = 1000,nullable = false)
     private String descriptions;
 
@@ -46,8 +49,9 @@ public class Product implements Serializable {
     @Column(name = "`status`" , columnDefinition = "1")
     private StatusCodeProductEnum status;
 
-    public Product(String title, String descriptions, int originalPrice, int promotionPrice, Integer amount) {
+    public Product(String title, String specifications, String descriptions, int originalPrice, int promotionPrice, Integer amount) {
         this.title = title;
+        this.specifications = specifications;
         this.descriptions = descriptions;
         this.originalPrice = originalPrice;
         this.promotionPrice = promotionPrice;
