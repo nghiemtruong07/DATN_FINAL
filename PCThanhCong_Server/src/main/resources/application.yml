@@ -1,0 +1,12 @@
+springdoc:
+  swagger-ui:
+    path: /api/swagger-ui
+
+pathTemp: D:\Code\SmartPhoneShop\SmartphoneShopServer\Temp\
+
+mail:
+  username : ${MAIL_USERNAME}
+  password : ${MAIL_PASSWORD}
+storage:
+  location: upload-dir
+
